@@ -1,0 +1,16 @@
+networks:
+  test-net:
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:22-alpine
+    restart: always
+    environment:
+      - CLICKHOUSE_USER=test
+      - CLICKHOUSE_PASSWORD=test
+      - CLICKHOUSE_DB=test
+    networks:
+      - test-net
+    ports:
+      - 20123:8123
+      - 20900:9000

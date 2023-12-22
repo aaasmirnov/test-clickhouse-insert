@@ -1,0 +1,15 @@
+{
+  "name": "test-clickhouse-insert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@clickhouse/client": "0.2.7",
+    "@faker-js/faker": "8.3.1",
+    "@types/luxon": "3.3.7",
+    "luxon": "3.4.4"
+  }
+}
